@@ -1,0 +1,16 @@
+{
+  "name": "ppeerit-atom-react-snippets",
+  "main": "./lib/ppeerit-atom-react-snippets",
+  "version": "0.0.1",
+  "description": "A short description of your package",
+  "main": "./lib/ppeerit-react-atom-snippets",
+  "keywords": [
+  ],
+  "repository": "https://github.com/ppeerit/ppeerit-atom-react-snippets",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+  }
+}

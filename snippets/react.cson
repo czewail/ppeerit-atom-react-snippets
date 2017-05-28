@@ -1,0 +1,82 @@
+'.source.js':
+  "React: import empty":
+    prefix: 'i'
+    body: "import ${1} from '${2}'"
+
+  "React: Create Component":
+    prefix: 'rc'
+    body: """
+      import React from 'react'
+
+      class ${1:MyComponent} extends React.Component {
+        render() {
+          return (${2:<div>MyComponent</div>})
+        }
+      }
+
+      export default ${1}
+
+    """
+
+  "React: Create Component with constructor":
+    prefix: 'rcc'
+    body: """
+      import React from 'react'
+
+      class ${1:MyComponent} extends React.Component {
+        constructor(props) {
+          super(props)
+        }
+
+        render() {
+          return (${2:<div>MyComponent</div>})
+        }
+      }
+
+      export default ${1}
+
+    """
+
+  "React: Create Component with proptypes":
+    prefix: 'rccp'
+    body: """
+      import React from 'react'
+      import PropType from 'prop-types'
+
+      class ${1:MyComponent} extends React.Component {
+        render() {
+          return (${2:<div>MyComponent</div>})
+        }
+      }
+
+      ${1}.propTypes = {}
+
+      ${1}.defaultProps = {}
+
+      export default ${1}
+
+    """
+
+  "React: Create Component with proptypes":
+    prefix: "rccp"
+    body: """
+      import React from 'react'
+      import PropType from 'prop-types'
+
+      class ${1:MyComponent} extends React.Component {
+        constructor(props) {
+          super(props)
+        }
+
+        render() {
+          return (${2:<div>MyComponent</div>})
+        }
+      }
+
+      ${1}.propTypes = {}
+
+      ${1}.defaultProps = {}
+
+      export default ${1}
+
+    """
