@@ -1,7 +1,7 @@
 {
   "name": "ppeerit-atom-react-snippets",
   "main": "./lib/ppeerit-atom-react-snippets",
-  "version": "0.0.1",
+  "version": "0.0.0",
   "description": "A short description of your package",
   "main": "./lib/ppeerit-react-atom-snippets",
   "keywords": [
