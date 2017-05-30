@@ -1,7 +1,93 @@
 '.source.js':
-  "React: import empty":
+
+  "React: import empty file":
     prefix: 'i'
-    body: "import ${1} from '${2}'"
+    body: "import '${1:FilePath}'"
+
+  "React: import empty":
+    prefix: 'im'
+    body: "import ${1:Name} from '${2:package}'"
+
+  "React: import empty with object":
+    prefix: 'imo'
+    body: "import ${1:Name} from '${2:package}'"
+
+  "React: import react":
+    prefix: 'imr'
+    body: "import React from 'react'"
+
+  "React: import react-dom":
+    prefix: 'imrd'
+    body: "import ReactDom from 'react-dom'"
+
+  "React: import prop-types":
+    prefix: 'imp'
+    body: "import PropTypes from 'prop-types'"
+
+  "React: constructor":
+    prefix: 'cs'
+    body: """
+      constructor(props) {
+        super(props)
+      }
+    """
+
+  "React: constructor with state":
+    prefix: 'css'
+    body: """
+      constructor(props) {
+        super(props)
+        this.state = {\n\t${1}: ${2}\n}
+      }
+    """
+
+  "React: render":
+    prefix: 'rd'
+    body: """
+      render() {
+        return (${1:<div>Component</div>})
+      }
+    """
+
+  "React: state":
+    prefix: 'st'
+    body: "this.state = {\n\t${1}: ${2}\n}"
+
+  "React: setState":
+    prefix: 'sst'
+    body: "this.setState({\n\t${1}: ${2}\n})"
+
+  "React: get state":
+    prefix: 'gst'
+    body: "const {${1}} = this.state"
+
+  "React: get props":
+    prefix: 'gp'
+    body: "const {${1}} = this.props"
+
+  "React: fn es6 define":
+    prefix: 'fnd'
+    body: """
+      FunctionName = (${1}) => {
+        ${2}
+      }
+    """
+
+  "React: componentDidMount":
+    prefix: 'cdm'
+    body: """
+      componentDidMount() {
+          ${1}
+      }
+    """
+
+  "React: componentDidMount":
+    prefix: 'cdum'
+    body: """
+      componentWillUnmount() {
+          ${1}
+      }
+    """
 
   "React: Create Component":
     prefix: 'rc'
@@ -15,6 +101,19 @@
       }
 
       export default ${1}
+
+    """
+
+  "React: Create ReactDom":
+    prefix: 'rdc'
+    body: """
+      import React from 'react'
+      import ReactDom from 'react-dom'
+
+      ReactDOM.render(
+        ${1:<div>component</div>},
+        document.getElementById('${2:app}')
+      )
 
     """
 
@@ -79,4 +178,16 @@
 
       export default ${1}
 
+    """
+
+  "React: set prop-types":
+    prefix: "spt"
+    body: """
+      ${1}.propTypes = {}
+    """
+
+  "React: default prop-types":
+    prefix: "dpt"
+    body: """
+      ${1}.defaultProps = {}
     """
