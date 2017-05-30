@@ -37,7 +37,9 @@
     body: """
       constructor(props) {
         super(props)
-        this.state = {\n\t${1}: ${2}\n}
+        this.state = {
+          ${1}: ${2}
+        }
       }
     """
 
