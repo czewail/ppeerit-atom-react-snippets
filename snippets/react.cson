@@ -51,11 +51,19 @@
 
   "React: state":
     prefix: 'st'
-    body: "this.state = {\n\t${1}: ${2}\n}"
+    body: """
+      this.state = {
+        ${1}: ${2}
+      }
+    """
 
   "React: setState":
     prefix: 'sst'
-    body: "this.setState({\n\t${1}: ${2}\n})"
+    body: """
+      this.setState({
+        ${1}: ${2}
+      })
+    """
 
   "React: get state":
     prefix: 'gst'
@@ -68,8 +76,8 @@
   "React: fn es6 define":
     prefix: 'fnd'
     body: """
-      FunctionName = (${1}) => {
-        ${2}
+      ${1:FunctionName} = (${2}) => {
+        ${3}
       }
     """
 
