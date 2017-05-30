@@ -150,7 +150,7 @@
     prefix: 'rccp'
     body: """
       import React from 'react'
-      import PropType from 'prop-types'
+      import PropTypes from 'prop-types'
 
       class ${1:MyComponent} extends React.Component {
         render() {
@@ -170,7 +170,7 @@
     prefix: "rccp"
     body: """
       import React from 'react'
-      import PropType from 'prop-types'
+      import PropTypes from 'prop-types'
 
       class ${1:MyComponent} extends React.Component {
         constructor(props) {
