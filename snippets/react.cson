@@ -10,7 +10,7 @@
 
   "ppeerit: import empty with object":
     prefix: 'imo'
-    body: "import ${1:Name} from '${2:package}'"
+    body: "import {${1:Name}} from '${2:package}'"
 
   "ppeerit: import react":
     prefix: 'imr'
@@ -153,30 +153,6 @@
       import PropTypes from 'prop-types'
 
       class ${1:MyComponent} extends React.Component {
-        render() {
-          return (${2:<div>MyComponent</div>})
-        }
-      }
-
-      ${1}.propTypes = {}
-
-      ${1}.defaultProps = {}
-
-      export default ${1}
-
-    """
-
-  "ppeerit: Create Component with proptypes":
-    prefix: "rccp"
-    body: """
-      import React from 'react'
-      import PropTypes from 'prop-types'
-
-      class ${1:MyComponent} extends React.Component {
-        constructor(props) {
-          super(props)
-        }
-
         render() {
           return (${2:<div>MyComponent</div>})
         }
