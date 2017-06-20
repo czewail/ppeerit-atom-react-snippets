@@ -1,31 +1,31 @@
 '.source.js':
 
   "ppeerit: import empty file":
-    prefix: 'i'
+    prefix: 'pi'
     body: "import '${1:FilePath}'"
 
   "ppeerit: import empty":
-    prefix: 'im'
+    prefix: 'pim'
     body: "import ${1:Name} from '${2:package}'"
 
   "ppeerit: import empty with object":
-    prefix: 'imo'
+    prefix: 'pimo'
     body: "import {${1:Name}} from '${2:package}'"
 
   "ppeerit: import react":
-    prefix: 'imr'
+    prefix: 'pimr'
     body: "import React from 'react'"
 
   "ppeerit: import react-dom":
-    prefix: 'imrd'
+    prefix: 'pimrd'
     body: "import ReactDom from 'react-dom'"
 
   "ppeerit: import prop-types":
-    prefix: 'imp'
+    prefix: 'pimp'
     body: "import PropTypes from 'prop-types'"
 
   "ppeerit: constructor":
-    prefix: 'cs'
+    prefix: 'pcs'
     body: """
       constructor(props) {
         super(props)
@@ -33,7 +33,7 @@
     """
 
   "ppeerit: constructor with state":
-    prefix: 'css'
+    prefix: 'pcss'
     body: """
       constructor(props) {
         super(props)
@@ -44,7 +44,7 @@
     """
 
   "ppeerit: render":
-    prefix: 'rd'
+    prefix: 'prd'
     body: """
       render() {
         return (${1:<div>Component</div>})
@@ -52,7 +52,7 @@
     """
 
   "ppeerit: state":
-    prefix: 'st'
+    prefix: 'pst'
     body: """
       this.state = {
         ${1}: ${2}
@@ -60,7 +60,7 @@
     """
 
   "ppeerit: setState":
-    prefix: 'sst'
+    prefix: 'psst'
     body: """
       this.setState({
         ${1}: ${2}
@@ -68,15 +68,15 @@
     """
 
   "ppeerit: get state":
-    prefix: 'gst'
+    prefix: 'pgst'
     body: "const {${1}} = this.state"
 
   "ppeerit: get props":
-    prefix: 'gp'
+    prefix: 'pgp'
     body: "const {${1}} = this.props"
 
   "ppeerit: fn es6 define":
-    prefix: 'fnd'
+    prefix: 'pfnd'
     body: """
       ${1:FunctionName} = (${2}) => {
         ${3}
@@ -84,7 +84,7 @@
     """
 
   "ppeerit: componentDidMount":
-    prefix: 'cdm'
+    prefix: 'pcdm'
     body: """
       componentDidMount() {
           ${1}
@@ -92,7 +92,7 @@
     """
 
   "ppeerit: componentDidMount":
-    prefix: 'cdum'
+    prefix: 'pcdum'
     body: """
       componentWillUnmount() {
           ${1}
@@ -100,7 +100,7 @@
     """
 
   "ppeerit: Create Component":
-    prefix: 'rc'
+    prefix: 'prc'
     body: """
       import React from 'react'
 
@@ -115,7 +115,7 @@
     """
 
   "ppeerit: Create ReactDom":
-    prefix: 'rdc'
+    prefix: 'prdc'
     body: """
       import React from 'react'
       import ReactDom from 'react-dom'
@@ -128,7 +128,7 @@
     """
 
   "ppeerit: Create Component with constructor":
-    prefix: 'rcc'
+    prefix: 'prcc'
     body: """
       import React from 'react'
 
@@ -147,7 +147,7 @@
     """
 
   "ppeerit: Create Component with proptypes":
-    prefix: 'rccp'
+    prefix: 'prccp'
     body: """
       import React from 'react'
       import PropTypes from 'prop-types'
@@ -167,13 +167,13 @@
     """
 
   "ppeerit: set prop-types":
-    prefix: "spt"
+    prefix: "pspt"
     body: """
       ${1}.propTypes = {}
     """
 
   "ppeerit: default prop-types":
-    prefix: "dpt"
+    prefix: "pdpt"
     body: """
       ${1}.defaultProps = {}
     """
