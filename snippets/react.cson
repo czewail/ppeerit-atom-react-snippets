@@ -1,30 +1,30 @@
 '.source.js':
 
-  "React: import empty file":
+  "ppeerit: import empty file":
     prefix: 'i'
     body: "import '${1:FilePath}'"
 
-  "React: import empty":
+  "ppeerit: import empty":
     prefix: 'im'
     body: "import ${1:Name} from '${2:package}'"
 
-  "React: import empty with object":
+  "ppeerit: import empty with object":
     prefix: 'imo'
     body: "import ${1:Name} from '${2:package}'"
 
-  "React: import react":
+  "ppeerit: import react":
     prefix: 'imr'
     body: "import React from 'react'"
 
-  "React: import react-dom":
+  "ppeerit: import react-dom":
     prefix: 'imrd'
     body: "import ReactDom from 'react-dom'"
 
-  "React: import prop-types":
+  "ppeerit: import prop-types":
     prefix: 'imp'
     body: "import PropTypes from 'prop-types'"
 
-  "React: constructor":
+  "ppeerit: constructor":
     prefix: 'cs'
     body: """
       constructor(props) {
@@ -32,7 +32,7 @@
       }
     """
 
-  "React: constructor with state":
+  "ppeerit: constructor with state":
     prefix: 'css'
     body: """
       constructor(props) {
@@ -43,7 +43,7 @@
       }
     """
 
-  "React: render":
+  "ppeerit: render":
     prefix: 'rd'
     body: """
       render() {
@@ -51,7 +51,7 @@
       }
     """
 
-  "React: state":
+  "ppeerit: state":
     prefix: 'st'
     body: """
       this.state = {
@@ -59,7 +59,7 @@
       }
     """
 
-  "React: setState":
+  "ppeerit: setState":
     prefix: 'sst'
     body: """
       this.setState({
@@ -67,15 +67,15 @@
       })
     """
 
-  "React: get state":
+  "ppeerit: get state":
     prefix: 'gst'
     body: "const {${1}} = this.state"
 
-  "React: get props":
+  "ppeerit: get props":
     prefix: 'gp'
     body: "const {${1}} = this.props"
 
-  "React: fn es6 define":
+  "ppeerit: fn es6 define":
     prefix: 'fnd'
     body: """
       ${1:FunctionName} = (${2}) => {
@@ -83,7 +83,7 @@
       }
     """
 
-  "React: componentDidMount":
+  "ppeerit: componentDidMount":
     prefix: 'cdm'
     body: """
       componentDidMount() {
@@ -91,7 +91,7 @@
       }
     """
 
-  "React: componentDidMount":
+  "ppeerit: componentDidMount":
     prefix: 'cdum'
     body: """
       componentWillUnmount() {
@@ -99,7 +99,7 @@
       }
     """
 
-  "React: Create Component":
+  "ppeerit: Create Component":
     prefix: 'rc'
     body: """
       import React from 'react'
@@ -114,7 +114,7 @@
 
     """
 
-  "React: Create ReactDom":
+  "ppeerit: Create ReactDom":
     prefix: 'rdc'
     body: """
       import React from 'react'
@@ -127,7 +127,7 @@
 
     """
 
-  "React: Create Component with constructor":
+  "ppeerit: Create Component with constructor":
     prefix: 'rcc'
     body: """
       import React from 'react'
@@ -146,7 +146,7 @@
 
     """
 
-  "React: Create Component with proptypes":
+  "ppeerit: Create Component with proptypes":
     prefix: 'rccp'
     body: """
       import React from 'react'
@@ -166,7 +166,7 @@
 
     """
 
-  "React: Create Component with proptypes":
+  "ppeerit: Create Component with proptypes":
     prefix: "rccp"
     body: """
       import React from 'react'
@@ -190,13 +190,13 @@
 
     """
 
-  "React: set prop-types":
+  "ppeerit: set prop-types":
     prefix: "spt"
     body: """
       ${1}.propTypes = {}
     """
 
-  "React: default prop-types":
+  "ppeerit: default prop-types":
     prefix: "dpt"
     body: """
       ${1}.defaultProps = {}
